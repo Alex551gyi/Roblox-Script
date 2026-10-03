@@ -1,12 +1,11 @@
-local platoboost = loadstring(game:HttpGet("https://api.platoboost.app/public/v1/auth"))()
+local lootlabs = loadstring(game:HttpGet("https://api.lootlabs.gg/v1/auth"))()
 
-local result = platoboost:verify({
-    service = "2482df09-609c-48ff-a68c-a90d3013deca",
+local result = lootlabs:verify({
+    service = "10abb04f0dc5ff727cda4a9ea7ff4910ce0083d196f30b3dc5e7bcee654aeffa",
     profile = "MM2 Mario"
 })
 
 if result.success then
-    -- Если ключ верный, скрипт безболезненно загружает сам Марио-чит:
     if not game:IsLoaded() then
         game.Loaded:Wait()
     end
