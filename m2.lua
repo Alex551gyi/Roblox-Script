@@ -1,5 +1,5 @@
--- ТВОЯ ССЫЛКА НА WORK.INK ДЛЯ ПОЛУЧЕНИЯ КЛЮЧА:
-local key_link = "https://api.platoboost.app/public/v1/loader?id=2482df09-609c-48ff-a68c-a90d3013deca"
+-- ТВОЯ НАСТОЯЩАЯ ССЫЛКА НА WORK.INK ДЛЯ ПОЛУЧЕНИЯ КЛЮЧА:
+local key_link = "https://work.ink/32Yi/9ff17897-3032-44c4-9a1a-e051b2ec4573"
 
 local function notify(title, text)
     pcall(game:GetService("StarterGui").SetCore, game:GetService("StarterGui"), "SendNotification", {
@@ -13,13 +13,13 @@ local input_key = _G.Key or ""
 local correct_key = "mario123"
 
 if input_key ~= correct_key then
-    notify("MM2 Mario Hub", "НЕВЕРНЫЙ КЛЮЧ! Ссылка скопирована в буфер обмена!")
+    notify("MM2 Mario Hub", "WRONG KEY! Link copied to your clipboard!")
     setclipboard(key_link)
-    print("Вставь ссылку в браузер: " .. key_link)
+    print("Paste link in browser to get key: " .. key_link)
     return
 end
 
-notify("MM2 Mario Hub", "Ключ верный! Загрузка...")
+notify("MM2 Mario Hub", "Key is correct! Loading script...")
 
 if not game:IsLoaded() then
     game.Loaded:Wait()
