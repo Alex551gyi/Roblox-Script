@@ -1,4 +1,5 @@
-local key_link = "https://work.ink/32Yi/9ff17897-3032-44c4-9a1a-e051b2ec4573"
+-- ТВОЯ ССЫЛКА НА WORK.INK С РЕКЛАМОЙ:
+local key_link = "https://work.ink/32Yi/57dd0652-91de-40aa-8738-44f2d442fad8"
 local correct_key = "mario123"
 
 -- Создаем красивое графическое окно прямо в Roblox
